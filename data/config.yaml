@@ -5,6 +5,7 @@ enableLinkPreview: true
 enableLatex: true
 enableSPA: true
 enableContextualBacklinks: true
+enableFooter: true
 description:
   a map-of-content of various topics in math, computer science, and engineering
 page_title:

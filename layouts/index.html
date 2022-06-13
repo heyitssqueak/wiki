@@ -6,6 +6,12 @@
 {{partial "search.html" .}}
 <div class="singlePage">
     <!-- Begin actual content -->
+    <div style="float:left;width:16%;position:fixed;overflow:scroll;transform:scale(0.8);top:48%;transform:translate(-50%,-50%)">
+        <div style="width:90%;float:right;">
+            {{ partial "page_nav.html" . }}
+            </div>
+    </div>
+    <div style="float:right;width:70%;margin:auto">
     <header>
         <h1>{{if .Title}}{{ .Title }}{{else}}Untitled{{end}}</h1>
         <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
@@ -20,6 +26,7 @@
         {{end}}
     </article>
     {{partial "footerIndex.html" .}}
+    </div>
 </div>
 </body>
 </html>
